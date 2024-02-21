@@ -99,12 +99,6 @@
     <Compile Include="frmUserProfile.designer.cs">
       <DependentUpon>frmUserProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUserProfileBS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUserProfileBS.designer.cs">
-      <DependentUpon>frmUserProfileBS.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmWait.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,9 +131,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUserProfile.resx">
       <DependentUpon>frmUserProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUserProfileBS.resx">
-      <DependentUpon>frmUserProfileBS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmWait.resx">
       <DependentUpon>frmWait.cs</DependentUpon>

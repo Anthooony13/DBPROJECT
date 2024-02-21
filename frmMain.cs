@@ -81,13 +81,19 @@ namespace DBPROJECT
             if (UserProfilefrm == null)
             {
                 UserProfilefrm = new frmUserProfile();
-                
+               // UserProfilefrm.MdiParent = this;
 
-                
+                UserProfilefrm.FormClosed += UserProfilefrm_FormClosed;
 
                 UserProfilefrm.Show();
             }
             else UserProfilefrm.Activate();
+
+            this.txtUserName.Text = Globals.gLoginName;
+        }
+        private void UserProfilefrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            UserProfilefrm = null;
 
             this.txtUserName.Text = Globals.gLoginName;
         }
