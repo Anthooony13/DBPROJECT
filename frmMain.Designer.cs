@@ -157,6 +157,7 @@ namespace DBPROJECT
             this.editUserProfileToolStripMenuItem.Name = "editUserProfileToolStripMenuItem";
             this.editUserProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editUserProfileToolStripMenuItem.Text = "Edit User Profile";
+            this.editUserProfileToolStripMenuItem.Click += new System.EventHandler(this.editUserProfileToolStripMenuItem_Click);
             // 
             // frmMain
             // 

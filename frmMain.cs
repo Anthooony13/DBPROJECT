@@ -73,5 +73,23 @@ namespace DBPROJECT
             ChangePasswordfrm.ShowDialog();
 
         }
+
+        private frmUserProfile UserProfilefrm;
+
+        private void editUserProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (UserProfilefrm == null)
+            {
+                UserProfilefrm = new frmUserProfile();
+                
+
+                
+
+                UserProfilefrm.Show();
+            }
+            else UserProfilefrm.Activate();
+
+            this.txtUserName.Text = Globals.gLoginName;
+        }
     }
 }

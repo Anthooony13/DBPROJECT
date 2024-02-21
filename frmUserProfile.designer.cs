@@ -287,6 +287,7 @@ namespace DBPROJECT
             // 
             // pictBoxUser
             // 
+            this.pictBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxUser.Image")));
             this.pictBoxUser.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictBoxUser.InitialImage")));
             this.pictBoxUser.Location = new System.Drawing.Point(6, 10);
             this.pictBoxUser.Name = "pictBoxUser";
