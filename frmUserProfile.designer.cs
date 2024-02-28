@@ -29,9 +29,7 @@ namespace DBPROJECT
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserProfile));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnChangePwd = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,24 +46,12 @@ namespace DBPROJECT
             this.btnSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.grpPhoto = new System.Windows.Forms.GroupBox();
-            this.pictBoxUser = new System.Windows.Forms.PictureBox();
+            this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.btnLoadPhoto = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
-            this.grpPhoto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBoxUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "save-icon-5402-Windows.ico");
-            this.imageList1.Images.SetKeyName(1, "refresh-icon-png-40262-Windows.ico");
-            this.imageList1.Images.SetKeyName(2, "edit-icon-png-3597.png");
-            this.imageList1.Images.SetKeyName(3, "camera-icon-39.jpg");
-            this.imageList1.Images.SetKeyName(4, "clear-icon-9196.gif");
             // 
             // groupBox2
             // 
@@ -85,20 +71,19 @@ namespace DBPROJECT
             this.groupBox2.Controls.Add(this.btnSave);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(3, 249);
+            this.groupBox2.Location = new System.Drawing.Point(0, 242);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(425, 253);
-            this.groupBox2.TabIndex = 0;
+            this.groupBox2.Size = new System.Drawing.Size(425, 266);
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
             // btnChangePwd
             // 
             this.btnChangePwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePwd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnChangePwd.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnChangePwd.ImageIndex = 4;
-            this.btnChangePwd.ImageList = this.imageList1;
-            this.btnChangePwd.Location = new System.Drawing.Point(15, 220);
+            this.btnChangePwd.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePwd.Image")));
+            this.btnChangePwd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangePwd.Location = new System.Drawing.Point(24, 220);
             this.btnChangePwd.Name = "btnChangePwd";
             this.btnChangePwd.Size = new System.Drawing.Size(190, 29);
             this.btnChangePwd.TabIndex = 114;
@@ -106,7 +91,6 @@ namespace DBPROJECT
             this.btnChangePwd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChangePwd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnChangePwd.UseVisualStyleBackColor = true;
-            this.btnChangePwd.Click += new System.EventHandler(this.btnChangePwd_Click);
             // 
             // label4
             // 
@@ -124,9 +108,8 @@ namespace DBPROJECT
             this.txtSMTPport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSMTPport.Location = new System.Drawing.Point(105, 115);
             this.txtSMTPport.Name = "txtSMTPport";
-            this.txtSMTPport.Size = new System.Drawing.Size(121, 22);
+            this.txtSMTPport.Size = new System.Drawing.Size(299, 22);
             this.txtSMTPport.TabIndex = 2;
-            this.txtSMTPport.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginName_KeyDown);
             // 
             // label3
             // 
@@ -146,7 +129,6 @@ namespace DBPROJECT
             this.txtSMTPHOST.Name = "txtSMTPHOST";
             this.txtSMTPHOST.Size = new System.Drawing.Size(299, 22);
             this.txtSMTPHOST.TabIndex = 1;
-            this.txtSMTPHOST.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginName_KeyDown);
             // 
             // cbxGender
             // 
@@ -159,8 +141,6 @@ namespace DBPROJECT
             this.cbxGender.Name = "cbxGender";
             this.cbxGender.Size = new System.Drawing.Size(121, 24);
             this.cbxGender.TabIndex = 4;
-            this.cbxGender.TextChanged += new System.EventHandler(this.pkrBirthdate_ValueChanged);
-            this.cbxGender.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginName_KeyDown);
             // 
             // label6
             // 
@@ -195,8 +175,6 @@ namespace DBPROJECT
             this.pkrBirthdate.Size = new System.Drawing.Size(121, 22);
             this.pkrBirthdate.TabIndex = 3;
             this.pkrBirthdate.Value = new System.DateTime(2023, 3, 19, 0, 0, 0, 0);
-            this.pkrBirthdate.ValueChanged += new System.EventHandler(this.pkrBirthdate_ValueChanged);
-            this.pkrBirthdate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginName_KeyDown);
             // 
             // txtEmail
             // 
@@ -205,7 +183,6 @@ namespace DBPROJECT
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(299, 22);
             this.txtEmail.TabIndex = 0;
-            this.txtEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginName_KeyDown);
             // 
             // txtLoginName
             // 
@@ -219,7 +196,6 @@ namespace DBPROJECT
             this.txtLoginName.Size = new System.Drawing.Size(299, 22);
             this.txtLoginName.TabIndex = 109;
             this.txtLoginName.TabStop = false;
-            this.txtLoginName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginName_KeyDown);
             // 
             // btnRefresh
             // 
@@ -227,31 +203,27 @@ namespace DBPROJECT
             this.btnRefresh.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnRefresh.ImageKey = "refresh-icon-png-40262-Windows.ico";
-            this.btnRefresh.ImageList = this.imageList1;
-            this.btnRefresh.Location = new System.Drawing.Point(329, 222);
+            this.btnRefresh.Location = new System.Drawing.Point(313, 218);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(91, 27);
+            this.btnRefresh.Size = new System.Drawing.Size(91, 29);
             this.btnRefresh.TabIndex = 6;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSave
             // 
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.ImageIndex = 0;
-            this.btnSave.ImageList = this.imageList1;
-            this.btnSave.Location = new System.Drawing.Point(236, 222);
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.Location = new System.Drawing.Point(220, 220);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(87, 27);
+            this.btnSave.Size = new System.Drawing.Size(87, 29);
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Save";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label2
             // 
@@ -275,37 +247,25 @@ namespace DBPROJECT
             this.label1.TabIndex = 18;
             this.label1.Text = "Login Name";
             // 
-            // grpPhoto
+            // picBoxUser
             // 
-            this.grpPhoto.BackColor = System.Drawing.Color.OldLace;
-            this.grpPhoto.Controls.Add(this.pictBoxUser);
-            this.grpPhoto.Location = new System.Drawing.Point(67, 12);
-            this.grpPhoto.Name = "grpPhoto";
-            this.grpPhoto.Size = new System.Drawing.Size(271, 200);
-            this.grpPhoto.TabIndex = 1;
-            this.grpPhoto.TabStop = false;
-            // 
-            // pictBoxUser
-            // 
-            this.pictBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxUser.Image")));
-            this.pictBoxUser.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictBoxUser.InitialImage")));
-            this.pictBoxUser.Location = new System.Drawing.Point(6, 10);
-            this.pictBoxUser.Name = "pictBoxUser";
-            this.pictBoxUser.Size = new System.Drawing.Size(265, 183);
-            this.pictBoxUser.TabIndex = 24;
-            this.pictBoxUser.TabStop = false;
+            this.picBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("picBoxUser.Image")));
+            this.picBoxUser.Location = new System.Drawing.Point(82, 12);
+            this.picBoxUser.Name = "picBoxUser";
+            this.picBoxUser.Size = new System.Drawing.Size(265, 183);
+            this.picBoxUser.TabIndex = 25;
+            this.picBoxUser.TabStop = false;
             // 
             // btnLoadPhoto
             // 
             this.btnLoadPhoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadPhoto.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLoadPhoto.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnLoadPhoto.ImageIndex = 3;
-            this.btnLoadPhoto.ImageList = this.imageList1;
-            this.btnLoadPhoto.Location = new System.Drawing.Point(71, 211);
+            this.btnLoadPhoto.Image = ((System.Drawing.Image)(resources.GetObject("btnLoadPhoto.Image")));
+            this.btnLoadPhoto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoadPhoto.Location = new System.Drawing.Point(76, 210);
             this.btnLoadPhoto.Name = "btnLoadPhoto";
-            this.btnLoadPhoto.Size = new System.Drawing.Size(150, 23);
-            this.btnLoadPhoto.TabIndex = 26;
+            this.btnLoadPhoto.Size = new System.Drawing.Size(150, 29);
+            this.btnLoadPhoto.TabIndex = 27;
             this.btnLoadPhoto.Text = "Load New Photo";
             this.btnLoadPhoto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLoadPhoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -316,13 +276,12 @@ namespace DBPROJECT
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnClear.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnClear.ImageIndex = 4;
-            this.btnClear.ImageList = this.imageList1;
-            this.btnClear.Location = new System.Drawing.Point(226, 211);
+            this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
+            this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClear.Location = new System.Drawing.Point(241, 210);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(113, 23);
-            this.btnClear.TabIndex = 27;
+            this.btnClear.Size = new System.Drawing.Size(113, 29);
+            this.btnClear.TabIndex = 28;
             this.btnClear.Text = "Clear Photo";
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -333,53 +292,43 @@ namespace DBPROJECT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(426, 506);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnLoadPhoto);
-            this.Controls.Add(this.grpPhoto);
+            this.Controls.Add(this.picBoxUser);
             this.Controls.Add(this.groupBox2);
-            this.DoubleBuffered = true;
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmUserProfile";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Profile";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmUserProfile_FormClosing);
             this.Load += new System.EventHandler(this.frmUserProfile_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.grpPhoto.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictBoxUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ImageList imageList1;
+
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnChangePwd;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtSMTPport;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtSMTPHOST;
+        private System.Windows.Forms.ComboBox cbxGender;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker pkrBirthdate;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtLoginName;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker pkrBirthdate;
-        private System.Windows.Forms.ComboBox cbxGender;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox grpPhoto;
-        private System.Windows.Forms.PictureBox pictBoxUser;
+        private System.Windows.Forms.PictureBox picBoxUser;
         private System.Windows.Forms.Button btnLoadPhoto;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtSMTPport;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSMTPHOST;
-        private System.Windows.Forms.Button btnChangePwd;
     }
 }
